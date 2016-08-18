@@ -160,6 +160,50 @@ section.rooms {
   }
 }
 
+/* Footer */
+
+footer {
+  background-color: $primary-color;
+  padding-top: rem-calc(30);
+  color: $white;
+  .menu {
+    a {
+      color: $white;
+    }
+  }
+  .contact-information {
+    li {
+      position: relative;
+      height: rem-calc(100);
+      padding-left: rem-calc(60);
+      padding-top: rem-calc(35);
+
+      &:first-child {
+        padding-top: 22px;
+      }
+
+      i {
+        font-size: rem-calc(60);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+  }
+  .social {
+    i {
+      font-size: rem-calc(60);
+    }
+  }
+
+  p.copyright {
+    padding: rem-calc(20 0);
+    background-color: darken($primary-color, 5);
+    margin: 0;
+  }
+}
+
 .bluebg {
   background-color: $primary-color;
 }
