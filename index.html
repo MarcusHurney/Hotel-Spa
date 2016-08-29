@@ -12,194 +12,247 @@
   </head>
   <body>
 
-    <!-- Begin Header -->
-    <section class="promo-video">
-      <div id="overlay"></div>
-      <video id="video" autoplay loop>
-        <!-- Order here is important, Ipad looks for mp4 and fails
-             if not found first -->
-        <!-- IE and Safari require mp4 -->
-        <source src="./assets/videos/videobg.mp4" type="video/mp4" />
-        <!-- Firefox, Chrome, and Opera use webm and ogv -->
-        <source src="./assets/videos/videobg.webm" type="video/webm" />
-        <source src="./assets/videos/videobg.ogv" type="video/ogv" />
-      </video>
+    <!-- Begin Off Canvas Menu -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-      <div class="headliner">
-        <div class="row">
-          <h1 class="text-center">Passion For Excellence</h1>
-        </div>
-      </div> <!--.headliner-->
+        <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+          <h3 class="text-center">Navigation</h3>
 
-      <div class="header-content">
-        <div class="row">
-          <div class="small-8 medium-4 columns">
-            <img src="./assets/images/logo.svg" />
-          </div>
-          <div class="small-4 medium-4 columns">
-            <a class="menu-icon float-right"></a>
-          </div>
-        </div>
-      </div><!--.header-content-->
-
-    </section>
-    <!-- End Header -->
-
-    <!-- Begin Rooms -->
-    <section class="rooms row">
-      <h2>Our Rooms</h2>
-      <div class="medium-4 columns">
-        <div class="room-image">
-          <img src="./assets/images/rooms/room-01.jpg" />
-          <div class="room-title">
-            <h3>Room 1</h3>
-          </div>
-        </div><!--.room-image-->
-        <div class="room-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div><!--.medium-4-->
-
-      <div class="medium-4 columns">
-        <div class="room-image">
-          <img src="./assets/images/rooms/room-02.jpg" />
-          <div class="room-title">
-            <h3>Room 2</h3>
-          </div>
-        </div><!--.room-image-->
-        <div class="room-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div><!--.medium-4-->
-
-      <div class="medium-4 columns">
-        <div class="room-image">
-          <img src="./assets/images/rooms/room-03.jpg" />
-          <div class="room-title">
-            <h3>Room 3</h3>
-          </div>
-        </div><!--.room-image-->
-        <div class="room-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div><!--.medium-4-->
-
-      <div class="row columns">
-        <a class="button float-right">View All</a>
-      </div>
-
-    </section>
-    <!-- End Rooms -->
-
-    <!-- Begin Separator Image -->
-    <div class="separator-image pool-image"></div>
-    <!-- End Separator Image -->
-
-    <!-- Begin About Us -->
-    <section class="about-us-gallery"><!-- the expanded class makes row full width -->
-      <div class="medium-6 columns empty"></div>
-      <div class="medium-6 columns empty"></div>
-
-      <div class="about-us-content">
-        <div class="row">
-
-          <div class="medium-6 columns">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-
-          <div class="medium-6 columns bluebg">
-            <h2 class="white">Gallery</h2>
-            <div class="row large-up-3 medium-up-2 small-up-2">
-              <div class="column">
-                <img class="thumbnail" src="./assets/images/gallery/thumbnail/image01.jpg" />
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="./assets/images/gallery/thumbnail/image02.jpg" />
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="./assets/images/gallery/thumbnail/image03.jpg" />
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="./assets/images/gallery/thumbnail/image04.jpg" />
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="./assets/images/gallery/thumbnail/image05.jpg" />
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="./assets/images/gallery/thumbnail/image06.jpg" />
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-    <!-- End About Us -->
-
-    <!-- Begin Separator Image -->
-    <div class="separator-image bar-image"></div>
-    <!-- End Separator Image -->
-
-    <!-- Begin Booking Section -->
-    <section class="booking row">
-      <div class="large-8 large-centered columns text-center">
-        <h2>Book Now</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <a class="button">Book Now</a>
-      </div>
-    </section>
-    <!-- End Booking Section -->
-
-    <!-- Begin Footer -->
-    <footer>
-      <div class="row">
-
-        <nav class="large-5 columns">
-          <ul class="vertical menu large-horizontal">
+          <ul class="menu vertical" data-drilldown>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Rooms</a></li>
+            <li class="has-submenu is-drilldown-submenu-parent"><a href="#">Rooms</a>
+              <ul class="menu vertical">
+                <li><a href="#">Room 1</a></li>
+                <li><a href="#">Room 2</a></li>
+                <li><a href="#">Room 3</a></li>
+                <li><a href="#">Room 4</a></li>
+                <li><a href="#">Room 5</a></li>
+                <li><a href="#">Room 6</a></li>
+              </ul>
+            </li>
             <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
+          </ul><!-- .menu vertical -->
 
-        <div class="contact-information large-3 columns">
-          <ul class="no-bullet vertical">
-            <li><i class="fi-marker"></i>100 Briarhill Lane NE, Atlanta, Georgia, USA 30008</li>
-            <li><i class="fi-telephone"></i>+1-706-485-4775</li>
-            <li><i class="fi-mail"></i>contact@hotelspa.com</li>
-          </ul>
-        </div>
+        </div><!-- .off-canvas position-left -->
+        <!-- End Off Canvas Menu -->
 
-        <div class="about-us large-4 columns">
-          <h4>About Us</h4>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <ul class="menu social align-right">
-            <li><a href="http://www.twitter.com"><i class="fi-social-twitter"></i></a></li>
-            <li><a href="http://www.facebook.com"><i class="fi-social-facebook"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-center copyright">All Right Reserved</p>
-    </footer>
-    <!-- End Footer -->
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <!-- Begin Header -->
+          <section class="promo-video">
+            <div id="overlay"></div>
+            <video id="video" autoplay loop>
+              <!-- Order here is important, Ipad looks for mp4 and fails
+                   if not found first -->
+              <!-- IE and Safari require mp4 -->
+              <source src="./assets/videos/videobg.mp4" type="video/mp4" />
+              <!-- Firefox, Chrome, and Opera use webm and ogv -->
+              <source src="./assets/videos/videobg.webm" type="video/webm" />
+              <source src="./assets/videos/videobg.ogv" type="video/ogv" />
+            </video>
+
+            <div class="headliner">
+              <div class="row">
+                <h1 class="text-center">Passion For Excellence</h1>
+              </div>
+            </div> <!--.headliner-->
+
+            <div class="header-content">
+              <div class="row">
+                <div class="small-8 medium-4 columns">
+                  <img src="./assets/images/logo.svg" />
+                </div>
+                <div class="small-4 medium-4 columns">
+                  <a class="menu-icon float-right" data-open="mainMenu"></a>
+                </div>
+              </div>
+            </div><!--.header-content-->
+
+          </section>
+          <!-- End Header -->
+
+          <!-- Begin Rooms -->
+          <section class="rooms row">
+            <h2>Our Rooms</h2>
+            <div class="medium-4 columns">
+              <div class="room-image">
+                <img src="./assets/images/rooms/room-01.jpg" />
+                <div class="room-title">
+                  <h3>Room 1</h3>
+                </div>
+              </div><!--.room-image-->
+              <div class="room-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div><!--.medium-4-->
+
+            <div class="medium-4 columns">
+              <div class="room-image">
+                <img src="./assets/images/rooms/room-02.jpg" />
+                <div class="room-title">
+                  <h3>Room 2</h3>
+                </div>
+              </div><!--.room-image-->
+              <div class="room-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div><!--.medium-4-->
+
+            <div class="medium-4 columns">
+              <div class="room-image">
+                <img src="./assets/images/rooms/room-03.jpg" />
+                <div class="room-title">
+                  <h3>Room 3</h3>
+                </div>
+              </div><!--.room-image-->
+              <div class="room-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div><!--.medium-4-->
+
+            <div class="row columns">
+              <a class="button float-right">View All</a>
+            </div>
+
+          </section>
+          <!-- End Rooms -->
+
+          <!-- Begin Separator Image -->
+          <div class="separator-image pool-image"></div>
+          <!-- End Separator Image -->
+
+          <!-- Begin About Us -->
+          <section class="about-us-gallery"><!-- the expanded class makes row full width -->
+            <div class="medium-6 columns empty"></div>
+            <div class="medium-6 columns empty"></div>
+
+            <div class="about-us-content">
+              <div class="row">
+
+                <div class="medium-6 columns">
+                  <h2>About Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <!-- Begin Modals -->
+                <div class="reveal" id="galleryModal" data-reveal>
+                  <img id="imageContainer" src="" />
+                </div>
+                <!-- End Modals -->
+
+                <div id="gallery" class="medium-6 columns bluebg">
+                  <h2 class="white">Gallery</h2>
+                  <div class="row large-up-3 medium-up-2 small-up-2">
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+          <!-- End About Us -->
+
+          <!-- Begin Separator Image -->
+          <div class="separator-image bar-image"></div>
+          <!-- End Separator Image -->
+
+          <!-- Begin Booking Section -->
+          <section class="booking row">
+            <div class="large-8 large-centered columns text-center">
+              <h2>Book Now</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a class="button">Book Now</a>
+            </div>
+          </section>
+          <!-- End Booking Section -->
+
+          <!-- Begin Footer -->
+          <footer>
+            <div class="row">
+
+              <nav class="large-5 columns">
+                <ul class="vertical menu large-horizontal">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Rooms</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </nav>
+
+              <div class="contact-information large-3 columns">
+                <ul class="no-bullet vertical">
+                  <li><i class="fi-marker"></i>100 Briarhill Lane NE, Atlanta, Georgia, USA 30008</li>
+                  <li><i class="fi-telephone"></i>+1-706-485-4775</li>
+                  <li><i class="fi-mail"></i>contact@hotelspa.com</li>
+                </ul>
+              </div>
+
+              <div class="about-us large-4 columns">
+                <h4>About Us</h4>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <ul class="menu social align-right">
+                  <li><a href="http://www.twitter.com"><i class="fi-social-twitter"></i></a></li>
+                  <li><a href="http://www.facebook.com"><i class="fi-social-facebook"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-center copyright">All Right Reserved</p>
+          </footer>
+          <!-- End Footer -->
+
+        </div><!-- .off-canvas-content -->
+      </div><!-- .off-canvas-wrapper-inner -->
+    </div><!-- .off-canvas-wrapper -->
+
+
 
 
 

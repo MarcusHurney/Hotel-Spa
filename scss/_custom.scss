@@ -4,6 +4,18 @@ h2 {
   margin: rem-calc(20 0);
 }
 
+/* Begin Off Canvas Menu */
+div.off-canvas {
+  height: 100%;
+  a, h3 {
+    color: $white;
+  }
+  .is-drilldown-submenu {
+    background-color: darken($primary-color, 20);
+  }
+}
+/* End Off Canvas Menu */
+
 /* Header Section */
 .promo-video {
   position: relative;
