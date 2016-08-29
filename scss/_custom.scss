@@ -4,6 +4,10 @@ h2 {
   margin: rem-calc(20 0);
 }
 
+.is-reveal-open .off-canvas-wrapper {
+  overflow-x: visible;
+}
+
 /* Begin Off Canvas Menu */
 div.off-canvas {
   height: 100%;

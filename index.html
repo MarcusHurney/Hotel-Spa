@@ -149,8 +149,17 @@
                 </div>
 
                 <!-- Begin Modals -->
-                <div class="reveal" id="galleryModal" data-reveal>
+                <div
+                  class="reveal"
+                  id="galleryModal"
+                  data-reveal
+                  data-close-on-click="true"
+                  data-animation-in="scale-in-up"
+                  data-animation-out="scale-out-down">
                   <img id="imageContainer" src="" />
+                  <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
                 <!-- End Modals -->
 
@@ -207,9 +216,63 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <a class="button">Book Now</a>
+              <a data-open="modalBook"class="button">Book Now</a>
             </div>
           </section>
+
+          <!-- Begin Book Now Modal -->
+          <div
+            class="reveal"
+            id="modalBook"
+            data-reveal
+            data-close-on-click="true"
+            data-animation-in="scale-in-up"
+            data-animation-out="scale-out-down">
+
+            <h2 class="text-center">Booking Form</h2>
+            <!-- "data-abide" is the foundation component -->
+            <form data-abide novalidate>
+              <div class="alert callout" style="display: none;" data-abide-error>
+                <p><i class="fi-alert"></i> There are some problems in your form!</p>
+              </div>
+              <div class="row columns">
+                <label>Name:</label>
+                <input type="text" placeholder="Your Name" required />
+                <span class="form-error">
+                  <i class="fi-alert"></i>
+                  Please enter a name to complete your booking
+                </span>
+              </div>
+              <div class="row columns">
+                <label>Email:</label>
+                <input type="text" placeholder="Your Email" required pattern="email" />
+                <span class="form-error">
+                  <i class="fi-alert"></i>
+                  Please enter an email to complete your booking
+                </span>
+              </div>
+              <div class="row columns">
+                <label>Phone Number:</label>
+                <!-- pattern="number" just requires a number type input, not a phone # -->
+                <input type="text" placeholder="Your Phone Number" required pattern="number"/>
+                <span class="form-error">
+                  <i class="fi-alert"></i>
+                  Please enter a phone number to complete your booking
+                </span>
+              </div>
+              <div class="row columns">
+                <label>Message:</label>
+                <textarea type="text" placeholder="Your Optional Message"></textarea>
+              </div>
+              <div class="row columns">
+                <input type="submit" class="button" value="Submit" />
+                <button type="reset" class="button success" value="Reset">Reset</button>
+              </div>
+            </form>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div><!-- End Book Now Modal -->
           <!-- End Booking Section -->
 
           <!-- Begin Footer -->
