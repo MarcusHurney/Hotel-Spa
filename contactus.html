@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Load Custom CSS file -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <!-- Load Foundation Icons -->
+    <link rel="stylesheet" href="./css/foundation-icons.css" />
+  </head>
+  <body>
+
+    <!-- Begin Off Canvas Menu -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+        <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+          <h3 class="text-center">Navigation</h3>
+
+          <ul class="menu vertical" data-drilldown>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="has-submenu is-drilldown-submenu-parent"><a href="rooms.html">Rooms</a>
+              <ul class="menu vertical">
+                <li><a href="room-01.html">Room 1</a></li>
+                <li><a href="room-02.html">Room 2</a></li>
+                <li><a href="room-03.html">Room 3</a></li>
+                <li><a href="room-04.html">Room 4</a></li>
+                <li><a href="room-05.html">Room 5</a></li>
+                <li><a href="room-06.html">Room 6</a></li>
+              </ul>
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul><!-- .menu vertical -->
+
+        </div><!-- .off-canvas position-left -->
+        <!-- End Off Canvas Menu -->
+
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <!-- Begin Header -->
+          <section class="promo">
+            <div id="overlay"></div>
+            <img src="assets/images/featured/contact-us.jpg" />
+
+            <div class="headliner hide-for-small-only">
+              <div class="row">
+                <h1 class="text-center">Contact Us</h1>
+              </div>
+            </div> <!--.headliner-->
+
+            <div class="header-content">
+              <div class="row">
+                <div class="small-8 medium-4 columns">
+                  <img src="./assets/images/logo.svg" />
+                </div>
+                <div class="small-4 medium-4 columns">
+                  <a class="menu-icon float-right" data-open="mainMenu"></a>
+                </div>
+              </div>
+            </div><!--.header-content-->
+
+          </section>
+          <!-- End Header -->
+
+          <div class="row column show-for-small-only">
+            <h2>About Us</h2>
+          </div>
+          <!-- BEGIN CONTACT FORM -->
+          <section class="content">
+            <form>
+              <div class="row">
+                <div class="large-6 columns large-centered">
+
+                  <div class="row">
+                    <div class="medium-12 columns">
+                      <label for="name">Name</label>
+                      <input type="text" placeholder="Your Name" name="name" />
+                    </div><!-- .medium-12 -->
+                  </div><!-- .row -->
+
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <label for="email">Email</label>
+                      <input type="email" placeholder="Your Email" name="email" />
+                    </div><!-- .medium-6 -->
+
+                    <div class="medium-6 columns">
+                      <label for="city">City</label>
+                      <input type="text" placeholder="City" name="city" />
+                    </div><!-- .medium-6 -->
+                  </div><!-- .row -->
+
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <label for="people">Number of People</label>
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="more">More</option>
+                      </select>
+                    </div><!-- .medium-6 -->
+
+                    <div class="medium-6 columns">
+                      <label for="date">Arrival Date</label>
+                      <input type="date" name="date" />
+                    </div><!-- .medium-6 -->
+                  </div><!-- .row -->
+
+                  <div class="row">
+                    <div class="medium 6 columns">
+                      <legend>Extra Bed:</legend>
+                      <input type="radio" name="extraBed" value="yes" id="yes" required />
+                      <label for="yes">Yes</label>
+                      <input type="radio" name="extraBed" value="no" id="no" />
+                      <label for="no">No</label>
+                    </div>
+                  </div><!-- .row -->
+
+                  <div class="row column text-center">
+                    <button type="submit" class="button" value="send">
+                      <span class="show-for-sr">Send</span>
+                      <span aria-hidden="true"><i class="fi-mail"></i></span>
+                      Send
+                    </button>
+
+                    <button class="button hollow" type="reset" value="Reset">
+                      Reset
+                    </button>
+                  </div><!-- .row -->
+
+                </div><!-- .large-6 -->
+              </div><!-- .row -->
+            </form>
+          </section>
+          <!-- END CONTACT FORM -->
+
+
+          <!-- Begin Footer -->
+          <footer>
+            <div class="row">
+
+              <nav class="large-5 columns">
+                <ul class="vertical menu large-horizontal">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="rooms.html">Rooms</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+              </nav>
+
+              <div class="contact-information large-3 columns">
+                <ul class="no-bullet vertical">
+                  <li><i class="fi-marker"></i>100 Briarhill Lane NE, Atlanta, Georgia, USA 30008</li>
+                  <li><i class="fi-telephone"></i>+1-706-485-4775</li>
+                  <li><i class="fi-mail"></i>contact@hotelspa.com</li>
+                </ul>
+              </div>
+
+              <div class="about-us large-4 columns">
+                <h4>About Us</h4>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <ul class="menu social align-right">
+                  <li><a href="http://www.twitter.com"><i class="fi-social-twitter"></i></a></li>
+                  <li><a href="http://www.facebook.com"><i class="fi-social-facebook"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-center copyright">All Right Reserved</p>
+          </footer>
+          <!-- End Footer -->
+
+        </div><!-- .off-canvas-content -->
+      </div><!-- .off-canvas-wrapper-inner -->
+    </div><!-- .off-canvas-wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Begin Script Tags -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <!-- End Script Tags -->
+  </body>
+</html>

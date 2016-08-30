@@ -72,7 +72,23 @@
             <h2>Room 01 / Presidential Suite</h2>
           </div>
 
-          <section id="room-01" class="content">
+          <!-- BEGIN ROOM-01 NAV -->
+          <section class="content">
+            <div class="row">
+              <div class="large-4 columns large-centered">
+                <nav class="roomMenu">
+                  <ul class="menu horizontal" data-magellan>
+                    <li><a href="#room-01-info">Information</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+          <!-- END ROOM-01 NAV -->
+
+          <section id="room-01-info" data-magellan-target="room-01-info" class="content">
             <section class="room-info">
               <div class="row">
                 <div class="large-10 columns large-centered">
@@ -95,7 +111,7 @@
               </div>
             </section>
 
-            <section class="gallery bluebg">
+            <section id="gallery" data-magellan-target="gallery" class="gallery bluebg">
               <div class="row">
                 <h2 class="white text-center">Gallery</h2>
 
@@ -125,7 +141,7 @@
           <!-- End Separator Image -->
 
           <!-- Begin Booking Section -->
-          <section class="booking row">
+          <section id="booking" data-magellan-target="booking" class="booking row">
             <div class="large-8 large-centered columns text-center">
               <h2>Book Now</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
