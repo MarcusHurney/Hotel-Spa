@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Room 01 / Presidential Suite</title>
     <!-- Load Custom CSS file -->
     <link rel="stylesheet" href="./css/app.css" />
     <!-- Load Foundation Icons -->
@@ -42,21 +42,13 @@
         <div class="off-canvas-content" data-off-canvas-content>
 
           <!-- Begin Header -->
-          <section class="promo-video">
+          <section class="promo">
             <div id="overlay"></div>
-            <video id="video" autoplay loop>
-              <!-- Order here is important, Ipad looks for mp4 and fails
-                   if not found first -->
-              <!-- IE and Safari require mp4 -->
-              <source src="./assets/videos/videobg.mp4" type="video/mp4" />
-              <!-- Firefox, Chrome, and Opera use webm and ogv -->
-              <source src="./assets/videos/videobg.webm" type="video/webm" />
-              <source src="./assets/videos/videobg.ogv" type="video/ogv" />
-            </video>
+            <img src="assets/images/featured/room01.jpg" />
 
-            <div class="headliner">
+            <div class="headliner hide-for-small-only">
               <div class="row">
-                <h1 class="text-center">Passion For Excellence</h1>
+                <h1 class="text-center">Room 01 / Presidential Suite</h1>
               </div>
             </div> <!--.headliner-->
 
@@ -74,140 +66,62 @@
           </section>
           <!-- End Header -->
 
-          <!-- Begin Rooms -->
-          <section class="content rooms row">
-            <div class="medium-4 columns">
-              <a href="room-01.html">
-                <div class="room-image">
-                  <img src="./assets/images/rooms/room-01.jpg" />
-                  <div class="room-title">
-                    <h3>Room 1</h3>
-                  </div>
-                </div><!--.room-image-->
-                <div class="room-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- .room-content -->
-              </a>
-            </div><!--.medium-4-->
+          <!-- Begin Room-01 Content -->
 
-            <div class="medium-4 columns">
-              <a href="room-02.html">
-                <div class="room-image">
-                  <img src="./assets/images/rooms/room-02.jpg" />
-                  <div class="room-title">
-                    <h3>Room 2</h3>
-                  </div>
-                </div><!--.room-image-->
-                <div class="room-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </a>
-            </div><!--.medium-4-->
+          <div class="row column show-for-small-only">
+            <h2>Room 01 / Presidential Suite</h2>
+          </div>
 
-            <div class="medium-4 columns">
-              <a href="room-03.html">
-                <div class="room-image">
-                  <img src="./assets/images/rooms/room-03.jpg" />
-                  <div class="room-title">
-                    <h3>Room 3</h3>
-                  </div>
-                </div><!--.room-image-->
-                <div class="room-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </a>
-            </div><!--.medium-4-->
-
-          </section>
-          <!-- End Rooms -->
-
-          <!-- Begin Separator Image -->
-          <div class="separator-image pool-image"></div>
-          <!-- End Separator Image -->
-
-          <!-- Begin About Us -->
-          <section class="about-us-gallery"><!-- the expanded class makes row full width -->
-            <div class="medium-6 columns empty"></div>
-            <div class="medium-6 columns empty"></div>
-
-            <div class="about-us-content">
+          <section id="room-01" class="content">
+            <section class="room-info">
               <div class="row">
-
-                <div class="medium-6 columns">
-                  <h2>About Us</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <div class="large-10 columns large-centered">
+                  <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
 
-                <!-- Begin Modals -->
-                <div
-                  class="reveal"
-                  id="galleryModal"
-                  data-reveal
-                  data-close-on-click="true"
-                  data-animation-in="scale-in-up"
-                  data-animation-out="scale-out-down">
-                  <img id="imageContainer" src="" />
-                  <button class="close-button" data-close aria-label="Close reveal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                  <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
                 </div>
-                <!-- End Modals -->
-
-                <div id="gallery" class="medium-6 columns bluebg">
-                  <h2 class="white">Gallery</h2>
-                  <div class="row large-up-3 medium-up-2 small-up-2">
-                    <div class="column">
-                      <a data-open="galleryModal">
-                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg" />
-                      </a>
-                    </div>
-                    <div class="column">
-                      <a data-open="galleryModal">
-                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg" />
-                      </a>
-                    </div>
-                    <div class="column">
-                      <a data-open="galleryModal">
-                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg" />
-                      </a>
-                    </div>
-                    <div class="column">
-                      <a data-open="galleryModal">
-                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg" />
-                      </a>
-                    </div>
-                    <div class="column">
-                      <a data-open="galleryModal">
-                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg" />
-                      </a>
-                    </div>
-                    <div class="column">
-                      <a data-open="galleryModal">
-                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
               </div>
-            </div>
+            </section>
+
+            <section class="gallery bluebg">
+              <div class="row">
+                <h2 class="white text-center">Gallery</h2>
+
+                <div class="medium-up-4 small-up-2">
+                  <div class="column">
+                    <img src="assets/images/gallery/thumbnail/room01-01.jpg" class="thumbnail"/>
+                  </div>
+                  <div class="column">
+                    <img src="assets/images/gallery/thumbnail/room01-02.jpg" class="thumbnail"/>
+                  </div>
+                  <div class="column">
+                    <img src="assets/images/gallery/thumbnail/room01-03.jpg" class="thumbnail"/>
+                  </div>
+                  <div class="column">
+                    <img src="assets/images/gallery/thumbnail/room01-04.jpg" class="thumbnail"/>
+                  </div>
+                </div><!-- .medium-up-4 -->
+
+              </div><!-- .row -->
+            </section>
 
           </section>
-          <!-- End About Us -->
+          <!-- End Room-01 Content -->
 
           <!-- Begin Separator Image -->
-          <div class="separator-image bar-image"></div>
+          <div class="separator-image room01-image"></div>
           <!-- End Separator Image -->
 
           <!-- Begin Booking Section -->
@@ -275,6 +189,8 @@
             </button>
           </div><!-- End Book Now Modal -->
           <!-- End Booking Section -->
+
+
 
           <!-- Begin Footer -->
           <footer>

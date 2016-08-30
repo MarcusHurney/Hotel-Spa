@@ -1,4 +1,12 @@
+function getHeight() {
+  var height = $('section.promo, section.promo-video').height();
+  $('#overlay').css({'height': height + 'px'});
+}
+
+
+
 $(function() {
+  getHeight();
   $('#gallery a').on('click', function() {
     var image = $(this).find('img').attr('src');
     // in order to change the src route of #galleryModal's img tag
@@ -12,6 +20,13 @@ $(function() {
     // give #galleryModal img tag the correct src value
     $('#galleryModal #imageContainer').attr('src', fullPath);
   });
+});
+
+// every time the client resizes the window,
+// getHeight() will be invoked, changing the #overlay div's height
+// to make it responsive
+$(window).resize(function () {
+  getHeight();
 });
 
 

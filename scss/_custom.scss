@@ -21,14 +21,15 @@ div.off-canvas {
 /* End Off Canvas Menu */
 
 /* Header Section */
-.promo-video {
+.promo-video,
+.promo {
   position: relative;
   #overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 746px;
+
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#29669e+0,2a3b5a+100&0.7+0,0.7+100 */
     background: -moz-linear-gradient(top,  rgba(41,102,158,0.7) 0%, rgba(42,59,90,0.7) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(41,102,158,0.7) 0%,rgba(42,59,90,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -74,6 +75,9 @@ div.off-canvas {
 /* Rooms Section */
 section.rooms {
   padding: rem-calc(30 0);
+  a {
+    color: $black;
+  }
   div.room-image {
     position: relative;
     .room-title {
@@ -141,6 +145,25 @@ section.rooms {
   }
 }
 
+.rooms-image {
+  background-image: url(../assets/images/separators/small/separator03-image.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../assets/images/separators/medium/separator03-image.jpg);
+  }
+  @include breakpoint(large) {
+    background-image: url(../assets/images/separators/large/separator03-image.jpg);
+  }
+}
+
+.room01-image {
+  background-image: url(../assets/images/separators/small/separator-room01-image.jpg);
+  @include breakpoint(medium) {
+    background-image: url(../assets/images/separators/medium/separator-room01-image.jpg);
+  }
+  @include breakpoint(large) {
+    background-image: url(../assets/images/separators/large/separator-room01-image.jpg);
+  }
+}
 /* About Us */
 
 .about-us-gallery {
@@ -232,4 +255,29 @@ h2.white {
 
 section.booking {
   padding: rem-calc(50);
+}
+
+/* Internal Pages ----------------------------------------------------------- */
+
+section.content {
+  padding: rem-calc(30 0);
+}
+
+/* Services */
+
+section.services .content-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  /* Values are applied at screen size medium and up */
+  @include breakpoint(medium) {
+    height: 380px;
+  }
+}
+
+/* Rooms */
+
+#room-01 {
+  padding: 0;
 }
