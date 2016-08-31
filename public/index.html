@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooms</title>
+    <title>Foundation for Sites</title>
     <!-- Load Custom CSS file -->
     <link rel="stylesheet" href="./css/app.css" />
     <!-- Load Foundation Icons -->
@@ -17,7 +17,7 @@
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
         <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
-          <h3 class="text-center">Navigation</h3>
+          <img src="./assets/images/logo.svg" />
 
           <ul class="menu vertical" data-drilldown>
             <li><a href="index.html">Home</a></li>
@@ -25,6 +25,7 @@
             <li><a href="services.html">Services</a></li>
             <li class="has-submenu is-drilldown-submenu-parent"><a href="rooms.html">Rooms</a>
               <ul class="menu vertical">
+                <li><a href="rooms.html">All Rooms</a></li>
                 <li><a href="room-01.html">Room 1</a></li>
                 <li><a href="room-02.html">Room 2</a></li>
                 <li><a href="room-03.html">Room 3</a></li>
@@ -42,13 +43,21 @@
         <div class="off-canvas-content" data-off-canvas-content>
 
           <!-- Begin Header -->
-          <section class="promo">
+          <section class="promo-video">
             <div id="overlay"></div>
-            <img src="assets/images/featured/rooms.jpg" />
+            <video id="video" autoplay loop>
+              <!-- Order here is important, Ipad looks for mp4 and fails
+                   if not found first -->
+              <!-- IE and Safari require mp4 -->
+              <source src="./assets/videos/videobg.mp4" type="video/mp4" />
+              <!-- Firefox, Chrome, and Opera use webm and ogv -->
+              <source src="./assets/videos/videobg.webm" type="video/webm" />
+              <source src="./assets/videos/videobg.ogv" type="video/ogv" />
+            </video>
 
-            <div class="headliner hide-for-small-only">
+            <div class="headliner">
               <div class="row">
-                <h1 class="text-center">Rooms</h1>
+                <h1 class="text-center">Passion For Excellence</h1>
               </div>
             </div> <!--.headliner-->
 
@@ -66,11 +75,7 @@
           </section>
           <!-- End Header -->
 
-          <div class="row column show-for-small-only">
-            <h2>Rooms</h2>
-          </div>
-
-          <!-- Begin Top 3 Rooms Row -->
+          <!-- Begin Rooms -->
           <section class="content rooms row">
             <div class="medium-4 columns">
               <a href="room-01.html">
@@ -121,65 +126,156 @@
             </div><!--.medium-4-->
 
           </section>
-          <!-- End Top 3 Rooms Row -->
+          <!-- End Rooms -->
 
           <!-- Begin Separator Image -->
-          <div class="separator-image rooms-image"></div>
+          <div class="separator-image pool-image"></div>
           <!-- End Separator Image -->
 
-          <!-- Begin Bottom 3 Rooms Row -->
-          <section class="content rooms row">
-            <div class="medium-4 columns">
-              <a href="room-04.html">
-                <div class="room-image">
-                  <img src="./assets/images/rooms/room-04.jpg" />
-                  <div class="room-title">
-                    <h3>Room 4</h3>
-                  </div>
-                </div><!--.room-image-->
-                <div class="room-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </a>
-            </div><!--.medium-4-->
+          <!-- Begin About Us -->
+          <section class="about-us-gallery"><!-- the expanded class makes row full width -->
+            <div class="medium-6 columns empty"></div>
+            <div class="medium-6 columns empty"></div>
 
-            <div class="medium-4 columns">
-              <a href="room-05.html">
-                <div class="room-image">
-                  <img src="./assets/images/rooms/room-05.jpg" />
-                  <div class="room-title">
-                    <h3>Room 5</h3>
-                  </div>
-                </div><!--.room-image-->
-                <div class="room-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </a>
-            </div><!--.medium-4-->
+            <div class="about-us-content">
+              <div class="row">
 
-            <div class="medium-4 columns">
-              <a href="room-06.html">
-                <div class="room-image">
-                  <img src="./assets/images/rooms/room-06.jpg" />
-                  <div class="room-title">
-                    <h3>Room 6</h3>
-                  </div>
-                </div><!--.room-image-->
-                <div class="room-content">
+                <div class="medium-6 columns">
+                  <h2>About Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-              </a>
-            </div><!--.medium-4-->
+
+                <!-- Begin Modals -->
+                <div
+                  class="reveal"
+                  id="galleryModal"
+                  data-reveal
+                  data-close-on-click="true"
+                  data-animation-in="scale-in-up"
+                  data-animation-out="scale-out-down">
+                  <img id="imageContainer" src="" />
+                  <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- End Modals -->
+
+                <div id="gallery" class="medium-6 columns bluebg">
+                  <h2 class="white">Gallery</h2>
+                  <div class="row large-up-3 medium-up-2 small-up-2">
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg" />
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a data-open="galleryModal">
+                        <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
 
           </section>
-          <!-- End Bottom 3 Rooms Row -->
+          <!-- End About Us -->
 
+          <!-- Begin Separator Image -->
+          <div class="separator-image bar-image"></div>
+          <!-- End Separator Image -->
+
+          <!-- Begin Booking Section -->
+          <section class="booking row">
+            <div class="large-8 large-centered columns text-center">
+              <h2>Book Now</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a data-open="modalBook"class="button">Book Now</a>
+            </div>
+          </section>
+
+          <!-- Begin Book Now Modal -->
+          <div
+            class="reveal"
+            id="modalBook"
+            data-reveal
+            data-close-on-click="true"
+            data-animation-in="scale-in-up"
+            data-animation-out="scale-out-down">
+
+            <h2 class="text-center">Booking Form</h2>
+            <!-- "data-abide" is the foundation component -->
+            <form data-abide novalidate>
+              <div class="alert callout" style="display: none;" data-abide-error>
+                <p><i class="fi-alert"></i> There are some problems in your form!</p>
+              </div>
+              <div class="row columns">
+                <label>Name:</label>
+                <input type="text" placeholder="Your Name" required />
+                <span class="form-error">
+                  <i class="fi-alert"></i>
+                  Please enter a name to complete your booking
+                </span>
+              </div>
+              <div class="row columns">
+                <label>Email:</label>
+                <input type="text" placeholder="Your Email" required pattern="email" />
+                <span class="form-error">
+                  <i class="fi-alert"></i>
+                  Please enter an email to complete your booking
+                </span>
+              </div>
+              <div class="row columns">
+                <label>Phone Number:</label>
+                <!-- pattern="number" just requires a number type input, not a phone # -->
+                <input type="text" placeholder="Your Phone Number" required pattern="number"/>
+                <span class="form-error">
+                  <i class="fi-alert"></i>
+                  Please enter a phone number to complete your booking
+                </span>
+              </div>
+              <div class="row columns">
+                <label>Message:</label>
+                <textarea type="text" placeholder="Your Optional Message"></textarea>
+              </div>
+              <div class="row columns">
+                <input type="submit" class="button" value="Submit" />
+                <button type="reset" class="button success" value="Reset">Reset</button>
+              </div>
+            </form>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div><!-- End Book Now Modal -->
+          <!-- End Booking Section -->
 
           <!-- Begin Footer -->
           <footer>
@@ -222,20 +318,10 @@
     </div><!-- .off-canvas-wrapper -->
 
 
-
-
-
-
-
-
-
-
-
-
     <!-- Begin Script Tags -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <!-- End Script Tags -->
   </body>

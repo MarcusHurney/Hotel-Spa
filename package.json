@@ -9,9 +9,13 @@
     "gulp-load-plugins": "^1.1.0",
     "gulp-sass": "^2.1.0"
   },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "gulp-autoprefixer": "^3.1.0"
+  },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +27,5 @@
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "gulp-autoprefixer": "^3.1.0"
-  }
+  "private": true
 }
